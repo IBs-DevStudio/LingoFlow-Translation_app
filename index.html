@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LingoFlow – Smart Language Translator</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+  <!-- ===== HERO / LANDING ===== -->
+  <header class="hero">
+    <nav class="nav">
+      <h2 class="logo">LingoFlow</h2>
+      <a href="#translator" class="nav-btn">Try Now</a>
+    </nav>
+
+    <div class="hero-layout">
+      <!-- LEFT -->
+      <div class="hero-content">
+        <h1>Translate Smarter. <span>Instantly.</span></h1>
+        <p>
+          A fast, browser-based language translator with voice playback,
+          copy support, and 100+ languages — completely free.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#translator" class="primary-btn">Start Translating</a>
+          <span class="badge">No login • No ads</span>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="hero-image">
+        <img src="illustration.jpg" alt="User using translation app" />
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== TRANSLATOR APP ===== -->
+  <main id="translator" class="app-section">
+    <div class="container">
+      <h2 class="app-title">Language Translator</h2>
+
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea
+            spellcheck="false"
+            class="from-text"
+            placeholder="Enter text here..."
+          ></textarea>
+
+          <ul class="controls">
+            <li class="row from">
+              <div class="icons">
+                <ion-icon id="from" name="volume-medium-outline"></ion-icon>
+                <ion-icon id="from" name="copy-outline"></ion-icon>
+              </div>
+              <select></select>
+            </li>
+
+            <li class="exchange">
+              <ion-icon name="swap-vertical"></ion-icon>
+            </li>
+
+            <li class="row to">
+              <select></select>
+              <div class="icons">
+                <ion-icon id="to" name="volume-medium-outline"></ion-icon>
+                <ion-icon id="to" name="copy-outline"></ion-icon>
+              </div>
+            </li>
+          </ul>
+
+          <textarea
+            spellcheck="false"
+            readonly
+            disabled
+            class="to-text"
+            placeholder="Translation will appear here..."
+          ></textarea>
+        </div>
+      </div>
+
+      <button class="translate-btn">Translate</button>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>Built by IB • Browser-based Translation Tool</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="logic.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6320ee, #8b5cf6);
+  color: #111;
+}
+
+/* ===== HERO ===== */
+.hero {
+  min-height: 100vh;
+  padding: 30px 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-btn {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* LEFT */
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.hero-content h1 span {
+  color: #e9d5ff;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  color: #f3e8ff;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #6320ee;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.badge {
+  color: #e9d5ff;
+  font-size: 0.9rem;
+}
+
+/* RIGHT IMAGE */
+.hero-image img {
+  max-width: 420px;
+  width: 100%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== APP ===== */
+.app-section {
+  padding: 80px 10px;
+  background: #f9f9ff;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.wrapper {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.text-input textarea {
+  width: 100%;
+  height: 200px;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.controls {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+}
+
+.controls select {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.icons ion-icon {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #777;
+}
+
+.exchange ion-icon {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.translate-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  background: #6320ee;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #6320ee;
+  color: #e9d5ff;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+}
